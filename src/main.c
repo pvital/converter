@@ -7,12 +7,31 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <limits.h>
 
 void usage(void) {
     printf("usage: convert decimal_number \n");
 }
 
 int main(int argc, const char * argv[]) {
-    usage();
+    int decimal;
+    
+    if (argc < 2 || argc > 3) {
+        usage();
+        return -1;
+    }
+    
+    decimal = atoi(argv[1]);
+    
+    if (decimal < 0) {
+        printf("ERROR: decimal number must be greater than zero (0).\n");
+        return -1;
+    }
+    if (decimal > INT_MAX) {
+        printf("ERROR: maximum decimal number supported is %d.\n", INT_MAX);
+        return -1;
+    }
+    
     return 0;
 }
