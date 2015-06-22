@@ -10,6 +10,7 @@
 #include <stdlib.h>
 #include <limits.h>
 #include "binary.h"
+#include "octal.h"
 
 void usage(void) {
     printf("usage: convert decimal_number \n");
@@ -35,5 +36,6 @@ int main(int argc, const char * argv[]) {
     }
 
     dec2bin(decimal);
+    dec2oct(decimal);
     return 0;
 }
