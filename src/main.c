@@ -9,32 +9,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
+#include "binary.h"
 
 void usage(void) {
     printf("usage: convert decimal_number \n");
-}
-
-void dec2bin(int decimal) {
-    int remainder[32];
-    int quocient = decimal, i = 0;
-    
-    while (quocient >= 2) {
-        remainder[i] = quocient % 2;
-        quocient = quocient / 2;
-        i++;
-    }
-    
-    // add the last quocient in the end of remainder list
-    remainder[i] = quocient;
-    
-    // print the remainder list in the revert order
-    printf ("The decimal number %d in binary is: ", decimal);
-    while (i >= 0) {
-        printf("%d", remainder[i]);
-        i--;
-    }
-    printf("\n");
-}
+} 
 
 int main(int argc, const char * argv[]) {
     int decimal;

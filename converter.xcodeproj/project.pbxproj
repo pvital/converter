@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		122C5CE81B3898FF006DBCC1 /* binary.c in Sources */ = {isa = PBXBuildFile; fileRef = 122C5CE71B3898FF006DBCC1 /* binary.c */; };
 		1231A8041B11301D00DD4EA2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1231A8031B11301D00DD4EA2 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		122C5CE71B3898FF006DBCC1 /* binary.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = binary.c; sourceTree = "<group>"; };
+		122C5CE91B389A9D006DBCC1 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = SOURCE_ROOT; };
 		1231A8001B11301D00DD4EA2 /* converter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = converter; sourceTree = BUILT_PRODUCTS_DIR; };
 		1231A8031B11301D00DD4EA2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +44,7 @@
 		1231A7F71B11301D00DD4EA2 = {
 			isa = PBXGroup;
 			children = (
+				122C5CE91B389A9D006DBCC1 /* include */,
 				1231A8021B11301D00DD4EA2 /* src */,
 				1231A8011B11301D00DD4EA2 /* Products */,
 			);
@@ -57,6 +61,7 @@
 		1231A8021B11301D00DD4EA2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				122C5CE71B3898FF006DBCC1 /* binary.c */,
 				1231A8031B11301D00DD4EA2 /* main.c */,
 			);
 			path = src;
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				122C5CE81B3898FF006DBCC1 /* binary.c in Sources */,
 				1231A8041B11301D00DD4EA2 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +166,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					include,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -196,6 +207,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					include,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
