@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		122C5CE81B3898FF006DBCC1 /* binary.c in Sources */ = {isa = PBXBuildFile; fileRef = 122C5CE71B3898FF006DBCC1 /* binary.c */; };
 		122C5CEC1B389CD5006DBCC1 /* octal.c in Sources */ = {isa = PBXBuildFile; fileRef = 122C5CEA1B389CD5006DBCC1 /* octal.c */; };
+		122C5CF01B389F0B006DBCC1 /* hexa.c in Sources */ = {isa = PBXBuildFile; fileRef = 122C5CEE1B389F0B006DBCC1 /* hexa.c */; };
 		1231A8041B11301D00DD4EA2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1231A8031B11301D00DD4EA2 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		122C5CE71B3898FF006DBCC1 /* binary.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = binary.c; sourceTree = "<group>"; };
 		122C5CE91B389A9D006DBCC1 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = SOURCE_ROOT; };
 		122C5CEA1B389CD5006DBCC1 /* octal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = octal.c; sourceTree = "<group>"; };
+		122C5CEE1B389F0B006DBCC1 /* hexa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hexa.c; sourceTree = "<group>"; };
 		1231A8001B11301D00DD4EA2 /* converter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = converter; sourceTree = BUILT_PRODUCTS_DIR; };
 		1231A8031B11301D00DD4EA2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 				122C5CE71B3898FF006DBCC1 /* binary.c */,
 				1231A8031B11301D00DD4EA2 /* main.c */,
 				122C5CEA1B389CD5006DBCC1 /* octal.c */,
+				122C5CEE1B389F0B006DBCC1 /* hexa.c */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				122C5CEC1B389CD5006DBCC1 /* octal.c in Sources */,
+				122C5CF01B389F0B006DBCC1 /* hexa.c in Sources */,
 				122C5CE81B3898FF006DBCC1 /* binary.c in Sources */,
 				1231A8041B11301D00DD4EA2 /* main.c in Sources */,
 			);

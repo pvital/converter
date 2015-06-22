@@ -11,6 +11,7 @@
 #include <limits.h>
 #include "binary.h"
 #include "octal.h"
+#include "hexa.h"
 
 void usage(void) {
     printf("usage: convert decimal_number \n");
@@ -37,5 +38,6 @@ int main(int argc, const char * argv[]) {
 
     dec2bin(decimal);
     dec2oct(decimal);
+    dec2hexa(decimal);
     return 0;
 }
