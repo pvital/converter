@@ -10,6 +10,7 @@
 		122C5CE81B3898FF006DBCC1 /* binary.c in Sources */ = {isa = PBXBuildFile; fileRef = 122C5CE71B3898FF006DBCC1 /* binary.c */; };
 		122C5CEC1B389CD5006DBCC1 /* octal.c in Sources */ = {isa = PBXBuildFile; fileRef = 122C5CEA1B389CD5006DBCC1 /* octal.c */; };
 		122C5CF01B389F0B006DBCC1 /* hexa.c in Sources */ = {isa = PBXBuildFile; fileRef = 122C5CEE1B389F0B006DBCC1 /* hexa.c */; };
+		122C5CF31B38C134006DBCC1 /* unit_tests.c in Sources */ = {isa = PBXBuildFile; fileRef = 122C5CF21B38C134006DBCC1 /* unit_tests.c */; };
 		1231A8041B11301D00DD4EA2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1231A8031B11301D00DD4EA2 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		122C5CE91B389A9D006DBCC1 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = SOURCE_ROOT; };
 		122C5CEA1B389CD5006DBCC1 /* octal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = octal.c; sourceTree = "<group>"; };
 		122C5CEE1B389F0B006DBCC1 /* hexa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hexa.c; sourceTree = "<group>"; };
+		122C5CF21B38C134006DBCC1 /* unit_tests.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = unit_tests.c; path = tests/unit_tests.c; sourceTree = "<group>"; };
 		1231A8001B11301D00DD4EA2 /* converter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = converter; sourceTree = BUILT_PRODUCTS_DIR; };
 		1231A8031B11301D00DD4EA2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,9 +47,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		122C5CF11B38C0A2006DBCC1 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				122C5CF21B38C134006DBCC1 /* unit_tests.c */,
+			);
+			name = tests;
+			sourceTree = "<group>";
+		};
 		1231A7F71B11301D00DD4EA2 = {
 			isa = PBXGroup;
 			children = (
+				122C5CF11B38C0A2006DBCC1 /* tests */,
 				122C5CE91B389A9D006DBCC1 /* include */,
 				1231A8021B11301D00DD4EA2 /* src */,
 				1231A8011B11301D00DD4EA2 /* Products */,
@@ -133,6 +144,7 @@
 				122C5CF01B389F0B006DBCC1 /* hexa.c in Sources */,
 				122C5CE81B3898FF006DBCC1 /* binary.c in Sources */,
 				1231A8041B11301D00DD4EA2 /* main.c in Sources */,
+				122C5CF31B38C134006DBCC1 /* unit_tests.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
